@@ -90,7 +90,7 @@
 <meta property="og:description" content="这是一个段落    无效  123456789101112# h1标题 ### h2标题 ##...###### h6标题 ######h1和h2的另外一种写法这是h1======这是h2------ 效果如下： 这是h1这是h2h3标题引用 this is a blockquote  This is a long quotation. This is a long quotation. Thi">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://suzy56.github.io/images/depp.jpg">
-<meta property="og:updated_time" content="2018-12-19T01:30:15.205Z">
+<meta property="og:updated_time" content="2018-12-19T02:50:00.006Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown基本语法使用">
 <meta name="twitter:description" content="这是一个段落    无效  123456789101112# h1标题 ### h2标题 ##...###### h6标题 ######h1和h2的另外一种写法这是h1======这是h2------ 效果如下： 这是h1这是h2h3标题引用 this is a blockquote  This is a long quotation. This is a long quotation. Thi">
@@ -362,7 +362,7 @@
 </blockquote>
 <blockquote>
 <blockquote>
-<p>This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation.</p>
+<p>This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation.<br><a id="more"></a></p>
 </blockquote>
 </blockquote>
 <h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">* red</span><br><span class="line">* bule</span><br><span class="line">* black</span><br><span class="line"></span><br><span class="line">+ red</span><br><span class="line">+ bule</span><br><span class="line">+ black</span><br><span class="line"></span><br><span class="line">- red</span><br><span class="line">- bule</span><br><span class="line">- black</span><br></pre></td></tr></table></figure>
@@ -414,14 +414,8 @@
 <div id="sequence-0"></div>
 
 <h4 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: Start</span><br><span class="line">e=&gt;end</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br><span class="line">同样hexo需要配置插件 http://wewelove.github.io/fcoder/2017/09/06/markdown-flowchart/</span><br></pre></td></tr></table></figure>
-<p><div id="flowchart-0" class="flow-chart"></div><script src="https://cdn.bootcss.com/raphael/2.2.7/raphael.min.js"></script><script src="https://cdn.bootcss.com/flowchart/1.7.0/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start
-e=>end
-op=>operation: My Operation
-cond=>condition: Yes or No?
-
-st->op->cond
-cond(yes)->e
-cond(no)->op</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script><script src="https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js"></script><script src="https://cdn.bootcss.com/raphael/2.2.7/raphael.min.js"></script><script src="https://cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdn.bootcss.com/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice->Bob: Hello Bob, how are you?
+<p><code>`</code>flow<br>st=&gt;start: Start<br>e=&gt;end<br>op=&gt;operation: My Operation<br>cond=&gt;condition: Yes or No?</p>
+<p>st-&gt;op-&gt;cond<br>cond(yes)-&gt;e<br>cond(no)-&gt;op<br><code>`</code><script src="https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js"></script><script src="https://cdn.bootcss.com/raphael/2.2.7/raphael.min.js"></script><script src="https://cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdn.bootcss.com/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice->Bob: Hello Bob, how are you?
 Note right of Bob: Bob thinks
 Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple"}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script></p>
 
